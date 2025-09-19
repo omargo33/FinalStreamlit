@@ -4,8 +4,8 @@ import pickle
 import re
 import requests
 import streamlit as st
-## import tensorflow as tf
 import time
+
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
