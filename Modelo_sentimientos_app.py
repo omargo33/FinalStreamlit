@@ -5,7 +5,7 @@ import re
 import requests
 import streamlit as st
 import time
-import tensorflow as tf 
+import tensorflow as keras 
 from keras.models import load_model
 from keras.preprocessing.sequence import pad_sequences
 
