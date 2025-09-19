@@ -5,9 +5,7 @@ import re
 import requests
 import streamlit as st
 import time
-import tensorflow as keras 
-from keras.models import load_model
-from keras.preprocessing.sequence import pad_sequences
+import tensorflow as tf 
 
 #
 # Configuración de la página, titulo, icono y layout (panel centrado)
@@ -24,7 +22,7 @@ st.set_page_config(
 def cargar_modelo_y_preprocesadores():
     try:
         # Cargar modelo
-        modelo = load_model("modelo_sentimientos.keras")
+        modelo = tf.keras.models.load_model("modelo_sentimientos.keras")
 
         # Cargar tokenizer
         with open("tokenizer_sentimientos.pkl", "rb") as f:
@@ -61,7 +59,7 @@ def predecir_sentimiento(texto, modelo, tokenizer, label_encoder, max_length=50)
 
     # Convertir a secuencia
     secuencia = tokenizer.texts_to_sequences([texto_limpio])
-    secuencia_padded = pad_sequences(secuencia, maxlen=max_length, padding="post")
+    secuencia_padded =   tf.keras.preprocessing.sequence.pad_sequences(secuencia, maxlen=max_length, padding="post")
 
     # Hacer predicción
     prediccion = modelo.predict(secuencia_padded, verbose=0)
