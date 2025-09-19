@@ -1,0 +1,8 @@
+streamlit
+tensorflow-cpu
+numpy
+scikit-learn
+matplotlib
+requests
+click
+pickle5
