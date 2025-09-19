@@ -1,8 +1,8 @@
-streamlit
+streamlit==1.28.0
+requests==2.31.0
+numpy==1.24.3
+click==8.1.7
 tensorflow-cpu
-numpy
 scikit-learn
 matplotlib
-requests
-click
 pickle5
