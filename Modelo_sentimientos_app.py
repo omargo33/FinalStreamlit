@@ -5,9 +5,8 @@ import re
 import requests
 import streamlit as st
 import time
-
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+from keras.models import load_model
+from keras.preprocessing.sequence import pad_sequences
 
 #
 # Configuración de la página, titulo, icono y layout (panel centrado)
