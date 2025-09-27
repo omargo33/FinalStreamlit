@@ -99,20 +99,6 @@ Abre [`Sentimiento.ipynb`](FinalStreamlit/Sentimiento.ipynb) en Jupyter para:
 - **Estadísticas Detalladas**: Valores numéricos de cada clase
 - **Indicadores Visuales**: Emojis y colores según el sentimiento
 
-## 🔮 Funciones Principales
-
-### Preprocesamiento
-```python
-def limpiar_texto(texto):
-    # Convierte a minúsculas y elimina caracteres especiales
-    # Normaliza espacios en blanco
-```
-
-### Predicción
-```python
-def predecir_sentimiento(texto, modelo, tokenizer, label_encoder):
-    # Procesa el texto y genera predicciones
-    # Retorna sentimiento, confianza y probabilidades
 ```
 
 ## 🎯 Propuesta de Valor
@@ -162,4 +148,4 @@ Proyecto Final - Fundamentos de Inteligencia Artificial
 
 ## 📄 Licencia
 
-Este proyecto fue desarrollado con fines académicos como parte del programa de Maestría en Ciencia de Datos.
+Este proyecto fue desarrollado con fines académicos como parte del programa de Maestría de Inteligencia Artificial.
